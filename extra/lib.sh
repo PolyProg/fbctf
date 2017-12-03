@@ -47,7 +47,7 @@ function package() {
     log "$1 is already installed. skipping."
   else
     log "Installing $1"
-    sudo DEBIAN_FRONTEND=noninteractive apt-get install $1 -y --no-install-recommends
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install $1 -y --no-install-recommends --force-yes
   fi
 }
 
